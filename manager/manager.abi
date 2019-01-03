@@ -1,0 +1,241 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Jan  2 20:17:42 2019",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "blacklistusr",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "closeuser",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "deposit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "erasebl",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "erasewl",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "refund",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "deposittime",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "seizedeposit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reason",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "upsertbl",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "upsertwl",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "displayname",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "userinfo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "lastposttime",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ext",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "validatepost",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "whitelistusr",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "displayname",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "closeuser",
+            "type": "closeuser",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "erasebl",
+            "type": "erasebl",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "erasewl",
+            "type": "erasewl",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "refund",
+            "type": "refund",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "seizedeposit",
+            "type": "seizedeposit",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "upsertbl",
+            "type": "upsertbl",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "upsertwl",
+            "type": "upsertwl",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "validatepost",
+            "type": "validatepost",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "blacklist",
+            "type": "blacklistusr",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "deposits",
+            "type": "deposit",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "userinfo",
+            "type": "userinfo",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "whitelist",
+            "type": "whitelistusr",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
